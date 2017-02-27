@@ -2,6 +2,7 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   config.omniauth :facebook, ENV['OAUTH_KEY_FACEBOOK'], ENV['OAUTH_SECRET_FACEBOOK']
+  config.omniauth :google_oauth2, ENV['OAUTH_KEY_GOOGLE'], ENV['OAUTH_SECRET_GOOGLE']
 
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing

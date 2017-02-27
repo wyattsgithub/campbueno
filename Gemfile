@@ -21,6 +21,7 @@ gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
 gem 'figaro'
 
 group :development, :test do
