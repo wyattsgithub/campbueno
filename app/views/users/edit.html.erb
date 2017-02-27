@@ -1,0 +1,8 @@
+<%= bootstrap_form_for(@user) do |f| %>
+  <%= f.email_field :email %>
+  <%= f.text_field :first_name %>
+  <%= f.text_field :last_name %>
+  <%= f.text_field :cell_phone %>
+  <%= f.text_area :address %>
+  <%= f.submit "Save" %>
+<% end %>
