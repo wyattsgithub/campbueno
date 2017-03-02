@@ -1,0 +1,26 @@
+<div class="row" style="padding-bottom: 20px">
+  <div class="col-lg-6">
+    <%= link_to omniauth_authorize_path(resource_name, 'facebook'), class: 'btn btn-primary', style: 'width: 100%' do %>
+      <i class="fa fa-facebook"></i> Signup via Facebook
+    <% end %>
+  </div>
+  <div class="col-lg-6">
+    <%= link_to omniauth_authorize_path(resource_name, 'google_oauth2'), class: 'btn btn-default', style: 'width: 100%' do %>
+      <i class="fa fa-google"></i> Signup via Google
+    <% end %>
+  </div>
+</div>
+
+<div class="well">
+  <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= f.hidden_field :identity_id %>
+    <%= f.email_field :email, autofocus: true %>
+    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.text_field :first_name %>
+    <%= f.text_field :last_name %>
+    <%= f.text_field :cell_phone %>
+    <%= f.text_area :address %>
+    <%= f.submit "Sign up", class: "btn btn-success", style: "width: 100%" %>
+  <% end %>
+</div>

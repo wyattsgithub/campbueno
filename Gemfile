@@ -15,6 +15,7 @@ gem 'email_validator'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap_form'
+gem 'font-awesome-rails'
 gem 'jquery-rails'
 
 gem 'devise'
@@ -23,6 +24,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'figaro'
+gem 'gibbon'
 
 group :development, :test do
   gem 'pry'
